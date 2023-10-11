@@ -1,3 +1,7 @@
+//Autor Mario Alfonso Nuñez (Desarrollador web en proceso)
+
+//GitHub link: https://github.com/ManZaWeb/Calcu_MarioAlfonsoNunez.git
+
 document.addEventListener('DOMContentLoaded', function() {
   //Getting elements from DOM
   const operationDisplay = document.querySelector('.calcu-screen')

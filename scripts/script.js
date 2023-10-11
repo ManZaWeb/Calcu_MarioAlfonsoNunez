@@ -117,9 +117,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if(lastInputType !== 'operator')
             console.log("%")
             operationDisplay.innerText = (operationDisplay.innerText/100)
-            lastInputType = null    
+            lastInputType = null
+            limit12()
     })
-
+    //Function for root button
     root.addEventListener("click", function(){
       if(lastInputType !== 'operator')
         
@@ -127,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
         lastInputType = null    
         limit12()
     })
-
+    //Function for square button
     square.addEventListener("click", function(){
       if(lastInputType !== 'operator'){
         operationDisplay.innerText = (Math.pow(operationDisplay.innerText, 2))
@@ -135,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
         lastInputType = null    
         limit12()
     })
-
+    //Function for 1/x button
     divx.addEventListener("click", function(){
       if(lastInputType !== 'operator'){
         operationDisplay.innerText = (1/operationDisplay.innerText)
